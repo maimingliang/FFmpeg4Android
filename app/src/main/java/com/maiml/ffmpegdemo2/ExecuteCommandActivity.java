@@ -43,7 +43,7 @@ public class ExecuteCommandActivity extends AppCompatActivity {
     /**
      * 截取视频的前30帧 转化为gif
      * targetSdkVersion >=23 注意文件的读写权限，这里为了方便 targetSdkVersion = 22
-     *    "ffmpeg -ss %d -t %d -i %s -s %d*%d -f gif %s";
+     * 更多命令，可以看FFmpeg基础命令系列 http://www.jianshu.com/c/dc36e88ce0a6
      */
     private void crop() {
 
