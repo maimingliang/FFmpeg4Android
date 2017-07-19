@@ -22,14 +22,14 @@
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="button"/>
+        android:text="avcodec"/>
 
     <Button
         android:id="@+id/btn2"
         android:layout_marginTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="button"/>
+        android:text="executeCommand"/>
 
     <Button
         android:id="@+id/btn3"

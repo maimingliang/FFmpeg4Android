@@ -23,9 +23,20 @@ public class FFmpeg {
         return avcodecinfo();
     }
 
-    private native String avcodecinfo();
+    /**
+     * 执行ffmpeg命令
+     * @param commands
+     * @return
+     */
+    public int executeCommand(String[] commands){
+        return execute(commands);
+    }
 
-//    swresample-2 avcodec-57 avfilter-6 swscale-4 avformat-57 avutil-55
+
+
+    private native String avcodecinfo();
+    private native int execute(String[] commands);
+
     static {
         System.loadLibrary("native-lib");
         System.loadLibrary("avutil-55");

@@ -1,11 +1,9 @@
 package com.maiml.ffmpegdemo2;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
-
-import com.maiml.ffmpeglibrary.FFmpeg;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,18 +12,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    // Example of a call to a native method
-    final TextView tv = (TextView) findViewById(R.id.sample_text);
+
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.setText(FFmpeg.getsInstance().getValue());
+                startActivity(new Intent(MainActivity.this,AvcodecTxtActivity.class));
+            }
+        });
+        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ExecuteCommandActivity.class));
             }
         });
 
 
     }
+
+
 
 
 }
