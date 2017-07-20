@@ -34,6 +34,7 @@ public class FFmpeg {
 
 
 
+    public native int play(Object surface,String path);
     private native String avcodecinfo();
     private native int execute(String[] commands);
 

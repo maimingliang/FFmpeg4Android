@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,VideoPlayActivity.class));
+            }
+        });
+
     }
 
 
