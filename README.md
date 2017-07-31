@@ -84,7 +84,9 @@ FFmpeg每次执行完命令后会调用 ffmpeg_cleanup 函数清理内存，�
 
 
 参考文章
+
 [FFmpeg](https://ffmpeg.org/documentation.html)
+
 [编译Android下可执行命令的FFmpeg](http://blog.csdn.net/mabeijianxi/article/details/72904694)
 
 END。
